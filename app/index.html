@@ -30,37 +30,50 @@
         </div>
         <div id="tabs">
             <div class="tab" data-index="0">Dashboard</div>
-            <div class="tab active" data-index="1">Project 12345</div>
-            <div class="tab" data-index="2">Project 218718</div>
-            <div class="tab" data-index="3">Project 927346</div>
+            <div class="tab active" data-index="1" data-info="12345">Project 12345</div>
+            <div class="tab" data-index="2" data-info="218718">Project 218718</div>
+            <div class="tab" data-index="3" data-info="927346">Project 927346</div>
             <div class="tab" data-index="4">Compliance</div>
         </div>
         <div id="main">
             <div id="left">
-                <div id="name">Customer - <span class="light" style="font-size: 20px">John Smitherson</div>
+                <div id="customer">Customer - <span class="light" style="font-size: 20px" id="name">John Smitherson</div>
                 <div class="label">Job Site Address:</div>
-                <div class="txt">1701 Main Street<br>Denver, CO 80101</div>
-                <div class="label">Year Built: <span class="light">1996</span></div>
-                <div class="label">Primary Phone: <a>(303) 555-5555</a></div>
-                <div class="label">Primary Email: <a>johnsmitherson@email.com</a></div>
+                <div class="txt" id="address">1701 Main Street</div>
+                <div class="txt" id="province">Denver, CO 80101</div>
+                <div class="label">Year Built: <span class="light" id="year">1996</span></div>
+                <div class="label">Primary Phone: <a id="phone">(303) 555-5555</a></div>
+                <div class="label">Primary Email: <a id="email">johnsmitherson@email.com</a></div>
                 <div class="divider"></div>
-                <div class="label c">Home Depot Store: <span class="light">1502</span></div>
+                <div class="label c">Home Depot Store: <span class="light" id="store">1502</span></div>
                 <div class="boxs">
-                    <div class="box b2" style="border-right: 1px solid #d9d9d9">Net<br><span class="money">$1, 562.24</span></div>
-                    <div class="box b2">Margin<br><span class="money">41.70%</span></div>
+                    <div class="box b2" style="border-right: 1px solid #d9d9d9">Net<br><span class="money" id="net">$1, 562.24</span></div>
+                    <div class="box b2">Margin<br><span class="money" id="margin">41.70%</span></div>
                 </div>
                 <div class="boxs">
                     <div class="box b3">
                         <i class="fas fa-plus"></i>
                         <span class="label">PO'S</span>
                         <div class="divider"></div>
-                        <span class="label">Total: <span class="money">$3,762.97</span>
+                        <span class="label">Total: <span class="money" id="poTotal">$3,762.97</span>
+                        <div class="select">
+                            <span id="poItems">9</span>&nbsp;Items
+                            <div class="picker">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="box b3">
                         <i class="fas fa-plus"></i>
                         <span class="label">WO'S</span>
                         <div class="divider"></div>
-                        <span class="label">Total: <span class="money">$2,193.71</span>
+                        <span class="label">Total: <span class="money" id="woTotal">$2,193.71</span>
+                        <div class="select">
+                            <span id="woItems">4</span>&nbsp;Items
+                            <div class="picker">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="box b3">
                         <i class="fas fa-plus"></i>
@@ -76,62 +89,74 @@
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Generate Work Orders</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Review Measure</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Create Purchase Orders</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Generate Work Orders</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Review Measure</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Create Purchase Orders</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Generate Work Orders</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Review Measure</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Create Purchase Orders</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Generate Work Orders</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Review Measure</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                         <div class="pt-item">
                             <i class="fal fa-trash-alt"></i>
                             <span class="label">Create Purchase Orders</span>
-                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                            <div class="txt name">John Smitherson Project</div>
+                            <div class="txt">Completed 12/5/2018 9:00am</div>
                         </div>
                     </div>
                 </div>
