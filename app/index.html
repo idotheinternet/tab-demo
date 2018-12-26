@@ -1,9 +1,151 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HOM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>hello</h1>
+        <div id="header">
+            <div id="logo"></div>
+            <span id="home">HŌM</span>
+            <div id="icons">
+                <i class="fas fa-clock"></i>
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-clipboard-list"></i>
+                <i class="fas fa-inbox"></i>
+                <i class="fas fa-paper-plane"></i>
+                <i class="fas fa-user-circle"></i>
+                <span>Karl Kocsis</span>
+                <i class="fas fa-sign-out"></i>
+            </div>
+            <input id="input" placeholder="Search...">
+            <div id="nav">
+                <span class="item active">Dashboard</span>
+                <span class="item">Project Activities</span>
+                <span class="item">Compliance</span>
+                <span class="item">Reports</span>
+                <span class="item">Administrator</span>
+            </div>
+        </div>
+        <div id="tabs">
+            <div class="tab active" data-index="0">Project 12345</div>
+            <div class="tab" data-index="1">Project 218718</div>
+            <div class="tab" data-index="2">Project 927346</div>
+        </div>
+        <div id="main">
+            <div id="left">
+                <div id="name">Customer - <span class="light" style="font-size: 20px">John Smitherson</div>
+                <div class="label">Job Site Address:</div>
+                <div class="txt">1701 Main Street<br>Denver, CO 80101</div>
+                <div class="label">Year Built: <span class="light">1996</span></div>
+                <div class="label">Primary Phone: <a>(303) 555-5555</a></div>
+                <div class="label">Primary Email: <a>johnsmitherson@email.com</a></div>
+                <div class="divider"></div>
+                <div class="label c">Home Depot Store: <span class="light">1502</span></div>
+                <div class="boxs">
+                    <div class="box b2" style="border-right: 1px solid #d9d9d9">Net<br><span class="money">$1, 562.24</span></div>
+                    <div class="box b2">Margin<br><span class="money">41.70%</span></div>
+                </div>
+                <div class="boxs">
+                    <div class="box b3">
+                        <i class="fas fa-plus"></i>
+                        <span class="label">PO'S</span>
+                        <div class="divider"></div>
+                        <span class="label">Total: <span class="money">$3,762.97</span>
+                    </div>
+                    <div class="box b3">
+                        <i class="fas fa-plus"></i>
+                        <span class="label">WO'S</span>
+                        <div class="divider"></div>
+                        <span class="label">Total: <span class="money">$2,193.71</span>
+                    </div>
+                    <div class="box b3">
+                        <i class="fas fa-plus"></i>
+                        <span class="label">Notes</span>
+                        <div class="divider"></div>
+                        <span class="label">Total: <span class="money">$3,762.97</span>
+                    </div>
+                </div>
+                <div id="pts">
+                    <div id="pt-header">Project Task Summary</div>
+                    <input id="t-input" placeholder="Search...">
+                    <div id="pt-content">
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Generate Work Orders</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Review Measure</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Create Purchase Orders</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Generate Work Orders</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Review Measure</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Create Purchase Orders</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Generate Work Orders</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Review Measure</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Create Purchase Orders</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Generate Work Orders</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Review Measure</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                        <div class="pt-item">
+                            <i class="fal fa-trash-alt"></i>
+                            <span class="label">Create Purchase Orders</span>
+                            <div class="txt">John Smitherson Project<br>Completed 12/5/2018 9:00am</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="right-nav">
+                    <span class="rn-item active" data-index="0">Project Summary</span>
+                    <span class="rn-item" data-index="1">Work Orders <span class="orange">2</span></span>
+                    <span class="rn-item" data-index="2">Purchase Orders <span class="orange">2</span></span>
+                    <div id="slider">
+                        <div></div>
+                    </div>
+                </div>
+                <div id="right-content">Project summary template</div>
+            </div>
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>
