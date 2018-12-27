@@ -33,8 +33,10 @@ function showInfo(data) {
     }
     i = names.length;
     while(i--) names[i].textContent = info.name + " Project";
-    
 }
 initTabs("item");
 initTabs("tab");
+document.getElementById("pill").onclick = function() {
+    !this.classList.contains("active") ? this.classList.add("active") : this.classList.remove("active");
+}
 

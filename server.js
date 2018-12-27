@@ -15,7 +15,8 @@ users = [
         poItems: "9",
         woItems: "4",
         poTotal: "$3,762.97",
-        woTotal: "$3,762.97"
+        woTotal: "$3,762.97",
+        nTotal: "64"
     }, 
     {
         project: "218718",
@@ -31,7 +32,8 @@ users = [
         poItems: "6",
         woItems: "2",
         poTotal: "$7,899.00",
-        woTotal: "$7,001.20"
+        woTotal: "$7,001.20",
+        nTotal: "72"
     },
     {
         project: "927346",
@@ -47,7 +49,8 @@ users = [
         poItems: "7",
         woItems: "3",
         poTotal: "$1,111.11",
-        woTotal: "$1,111.11"
+        woTotal: "$1,111.11",
+        nTotal: "55"
     }
 ];
 server.use(express.static("./app"));
