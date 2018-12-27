@@ -4,11 +4,9 @@ function initTabs(elems) {
     let i = items.length;
     while(i--) items[i].onclick = function() {
         let i = items.length;
-        while(i--) {
-            if(items[i].classList.contains("active")) {
-                items[i].classList.remove("active");
-                break;
-            }
+        while(i--) if(items[i].classList.contains("active")) {
+            items[i].classList.remove("active");
+            break;
         }
         this.classList.add("active");
         if(this.dataset.info) getData(this.dataset.info);
@@ -28,9 +26,7 @@ function showInfo(data) {
     keys = Object.keys(info),
     len = keys.length;
     let i = 1;
-    for(; i < len; i++) {
-        document.getElementById(keys[i]).textContent = info[keys[i]];
-    }
+    for(; i < len; i++) document.getElementById(keys[i]).textContent = info[keys[i]];
     i = names.length;
     while(i--) names[i].textContent = info.name + " Project";
 }

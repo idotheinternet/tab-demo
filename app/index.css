@@ -338,6 +338,7 @@ a {
     left: calc(100% - 10px);
     transform: translateX(-100%);
     color: red;
+    cursor: pointer;
 }
 .select {
     position: relative;
