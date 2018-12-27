@@ -400,6 +400,23 @@ a {
 .blue {
     color: #0088cb;
 }
+.actions {
+    display: inline-flex;
+    justify-content: center;
+}
+.actions i {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.fa-pencil-alt {
+    color: green;
+}
+.fa-exclamation-triangle, .fa-upload {
+    color: #ffa500;
+}
+.fa-bars {
+    color: gray;
+}
 #footer {
     width: 100%;
     height: 50px;
