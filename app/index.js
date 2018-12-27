@@ -35,7 +35,8 @@ function showInfo(data) {
     while(i--) names[i].textContent = info.name + " Project";
 }
 initTabs("item");
-initTabs("tab");
+initTabs("top");
+initTabs("sub");
 document.getElementById("pill").onclick = function() {
     !this.classList.contains("active") ? this.classList.add("active") : this.classList.remove("active");
 }
